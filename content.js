@@ -1,7 +1,9 @@
 let isEnabled = false;
+
 const overlay = document.createElement('div');
 overlay.id = 'focus-mode-overlay';
 document.body.appendChild(overlay);
+overlay.style.display = 'none';
 
 // Listen for the toggle message from background.js
 chrome.runtime.onMessage.addListener((request) => {
