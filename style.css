@@ -1,0 +1,12 @@
+#focus-mode-overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9); /* Darkness intensity */
+  pointer-events: none; /* Allows you to click "through" the overlay */
+  z-index: 999999;
+  display: block;
+  /* Initial state: everything dark */
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+}
